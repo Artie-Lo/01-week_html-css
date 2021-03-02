@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  color: papayawhip;
+  margin: 0;
+  background-color: #2a607c;
+}
+
+header {
+  padding: 60px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+a {
+  color: white;
+  text-decoration: none; 
+}
+
+a:hover{
+  color:crimson;
+}
+a:active{
+  color: green; box-shadow: saddlebrown;
+}
+
+nav {
+  display: flex;
+  text-align: center;
+  background-color: #d8a47f;
+}
+
+nav p {
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav li{
+  display: inline;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  flex: 30%;
+  background-image: url(../aj.jpg);
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+section {
+  flex: 70%;
+  background-image: url(../image-2.jpg);
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+.button{
+  background-color:#2a607c;
+  color: #ffffff;
+  border:cornsilk solid;
+  padding: 5px;
+}
+/* Image Placeholders */
+.sample-img {
+  background-color: rgb(42, 8, 235);
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.img {
+  background-color: rgb(226, 223, 14);
+  width: 100%;
+  padding: 20px;
+  height: 540px;
+  border: 1px solid black;
+}
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  header {
+    background: #772014;
+  }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #bb8588;
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ac4ff;
+  }
+}
