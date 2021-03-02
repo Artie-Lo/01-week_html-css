@@ -1,2 +1,2 @@
-# 01-week_html-css
+# 02-week_html-css
 Homework folder
